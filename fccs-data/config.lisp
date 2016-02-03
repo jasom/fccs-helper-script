@@ -7,8 +7,8 @@
 (setf *clack-args*
       '(
 	:server :mongrel2
-	:sub-addr "tcp://localhost:9997"
-	:pub-addr "tcp://localhost:9996"
+	:sub-addr "tcp://127.0.0.1:9997"
+	:pub-addr "tcp://127.0.0.1:9996"
 	:worker-entry db-connect
 	:worker-exit redis:disconnect
 	:use-thread nil))
